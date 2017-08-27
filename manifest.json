@@ -1,0 +1,56 @@
+{
+  "applications": {
+    "gecko": {
+      "id": "selecttab@braniecki.net",
+      "strict_min_version": "48.0"
+    }
+  },
+  "manifest_version": 2,
+  "name": "SelectTab Gnome Shortcut Override",
+  "version": "1.0",
+
+  "description": "An extension that overrides the default select-tab modifier key.",
+
+  "permissions": ["tabs"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "commands": {
+    "selectTab1": {
+      "suggested_key": { "default": "Ctrl+1" },
+      "description": "Activate Tab 1"
+    },
+    "selectTab2": {
+      "suggested_key": { "default": "Ctrl+2" },
+      "description": "Activate Tab 2"
+    },
+    "selectTab3": {
+      "suggested_key": { "default": "Ctrl+3" },
+      "description": "Activate Tab 3"
+    },
+    "selectTab4": {
+      "suggested_key": { "default": "Ctrl+4" },
+      "description": "Activate Tab 4"
+    },
+    "selectTab5": {
+      "suggested_key": { "default": "Ctrl+5" },
+      "description": "Activate Tab 5"
+    },
+    "selectTab6": {
+      "suggested_key": { "default": "Ctrl+6" },
+      "description": "Activate Tab 6"
+    },
+    "selectTab7": {
+      "suggested_key": { "default": "Ctrl+7" },
+      "description": "Activate Tab 7"
+    },
+    "selectTab8": {
+      "suggested_key": { "default": "Ctrl+8" },
+      "description": "Activate Tab 8"
+    },
+    "selectTab9": {
+      "suggested_key": { "default": "Ctrl+9" },
+      "description": "Activate Tab 9"
+    }
+  }
+}
