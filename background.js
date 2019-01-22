@@ -4,5 +4,14 @@ browser.commands.onCommand.addListener(async (command) => {
   if (tabs.length < num) {
     return;
   }
+  if (num == 8) {
+    num = tabs.length - 1;
+  }
+  if (num == 7) {
+    // first non-pinned tab
+    num = tabs.findIndex(function(tab) {
+      return !tab.pinned;
+    });
+  }
   browser.tabs.update(tabs[num].id, {active: true});
 });
